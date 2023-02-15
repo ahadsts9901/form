@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>form</title>
+    <meta name="author" content="Muhammad Ahad">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h2>Form</h2>
+    <p>Please fill this form your all information will be private<p>
+    <fieldset>
+        <legend>
+            <h2 class="white">Information</h2>
+        </legend>
+        <form>
+            <table>
+                    <tr>
+                        <td class="name">Name</td>
+                        <td><input class="textarea" required placeholder="Enter your name"
+                            type="text" name="name" size="30" minlength="4" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                        <td class="name">E-mail</td>
+                        <td><input class="textarea" required id="email" placeholder="Enter your e-mail" type="email"
+                            name="email" s size="30"></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Password</td>
+                        <td><input class="textarea" required id="password" placeholder="Enter Your Password Minimum 8 Letters"
+                            type="password" name="password" size="30" minlength="8" maxlength="12"></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Gender</td>
+                        <td class="box"><label class="container">
+                            <input class="radio" required id="gender" type="radio" name="gender" value="male">
+                            <span class="radio"></span>
+                            Male</label>
+                            <label class="container">
+                                <input class="radio" required id="gender" type="radio" name="gender" value="female">
+                            <span class="radio"></span>
+                            Female</label>
+                            <label class="container">
+                                <input class="radio" required id="gender" type="radio" name="gender" value="thirdgender">
+                            <span class="radio"></span>
+                            Third gender</label></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Age</td>
+                        <td><input class="textarea" required id="age" placeholder="15 To 40" type="number" min="15" max="40"></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Province</td>
+                        <td class="checkbox">
+                            <select name="province">
+                            <option value="sindh">Sindh</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="kpk">KPK</option>
+                            <option value="balochistan">Balochistan</option>
+                            <option value="kashmir">Kashmir</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">Favourite dish(es)</td>
+                        <td class="checkbox box"><label class="container">
+                            <input id="dishes" type="checkbox" name="dishes" value="biryani">
+                            <span class="checkmark"></span>
+                            Biryani</label>
+                            <label class="container">
+                                <input id="dishes" type="checkbox" name="dishes" value="korma">
+                            <span class="checkmark"></span>
+                            Korma</label>
+                            <label class="container">
+                                <input id="dishes" type="checkbox" name="dishes" value="nihari">
+                            <span class="checkmark"></span>
+                            Nihari</label>
+                            <label class="container">
+                                <input id="dishes" type="checkbox" name="dishes" value="haleem">
+                            <span class="checkmark"></span>
+                            Haleem</label>
+                            <label class="container">
+                                <input id="dishes" type="checkbox" name="dishes" value="paaya">
+                            <span class="checkmark"></span>
+                            Paaya</label>
+                            <label class="container">
+                                <input id="dishes" type="checkbox" name="dishes" value="tikka">
+                            <span class="checkmark"></span>
+                            Tikka</label>
+                            <label class="container">
+                                <input id="dishes" type="checkbox" name="dishes" value="kabab">
+                            <span class="checkmark"></span>
+                            Kabab</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">Vehicles you've travelled</td>
+                        <td><select name="vehicles" size="3" multiple="multiple">
+                            <option value="bicycle">Bicycle</option>
+                            <option value="motorcycle">MotorCycle</option>
+                            <option value="rickshaw">RickShaw</option>
+                            <option value="car">Car</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="van">Van</option>
+                            <option value="bus">Bus</option>
+                            <option value="truck">Truck</option>
+                            <option value="train">Train</option>
+                            <option value="aeroplane">Aeroplane</option>
+                            <option value="boat">Boat</option>
+                            <option value="ship">Ship</option><br />
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">Write something</td>
+                        <td><textarea class="textarea" required id="user-experience" placeholder="Type Your Bio Here" title="bio" cols="15" rows="8"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Upload an image</td>
+                        <td><input class="image" required id="image" placeholder="Upload An Image" type="file"
+                            accept="image/*"></td>
+                    </tr>
+            </table>
+            <button class="submit" type="submit">Submit</button>
+    </fieldset>
+</body>
+</html>
